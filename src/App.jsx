@@ -114,7 +114,7 @@ function App() {
             />
             <button
               onClick={handleGenerate}
-              disabled={!amount || amount<=0 || !amount || amount > 10000}
+              disabled={!amount || amount<=0 || !amount || amount > 10000 || !amount || amount < 1}
             >
               Generate UPI QR
             </button>
