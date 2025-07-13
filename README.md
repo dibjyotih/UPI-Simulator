@@ -1,16 +1,44 @@
-<<<<<<< HEAD
-# React + Vite
+# 🧾 UPI Payment Simulator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal UPI payment simulation app that generates UPI QR codes using your UPI ID and amount, simulates a 2-minute payment window, and keeps persistent transaction logs with options to download or reset.
 
-Currently, two official plugins are available:
+> ⚡ Built with React + Vite. No backend required.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot](./screenshot.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# UPI-Simulator
->>>>>>> e9eaa5db1f1cb940847d8632be1a088c1456aa59
+## 🚀 Features
+
+- 🔐 Enter amount and generate a UPI-compliant QR code
+- ⏳ Timer-limited payment (2 minutes countdown)
+- ✅ Manual "Mark as Paid" to simulate success
+- 📜 Persistent transaction logs via `localStorage`
+- 📂 Export logs to Excel (.csv)
+- ❌ Delete logs with one click
+- 🆕 Cancel or retry payment during countdown
+- 🎨 Clean grayscale minimalist UI
+- 🧠 Fully offline, no backend needed
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech         | Purpose                         |
+|--------------|----------------------------------|
+| React.js     | Frontend SPA                    |
+| Vite         | Fast dev server + bundler       |
+| QRCode       | `react-qr-code` for QR gen      |
+| dayjs        | Timestamp formatting            |
+| localStorage | Persistent log storage          |
+| Blob + JS    | Excel export + file saving      |
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/YOUR_USERNAME/upi-payment-simulator.git
+cd upi-payment-simulator
+npm install
+npm run dev
