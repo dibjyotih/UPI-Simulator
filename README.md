@@ -1,7 +1,7 @@
 # 🧾 UPI Payment Simulator
 
 A minimal UPI payment simulation app that generates UPI QR codes using your UPI ID and amount, simulates a 2-minute payment window, and keeps persistent transaction logs with options to download or reset.
-Deploy link: https://upi-simulator.vercel.app/
+### Deploy link: https://upi-simulator.vercel.app/
 
 > ⚡ Built with React + Vite. No backend required.
 
