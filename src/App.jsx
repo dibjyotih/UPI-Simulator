@@ -55,7 +55,7 @@ function App() {
 
     const txn = {
       id: Date.now(),
-      amount,
+      amount: parseFloat(amount).toFixed(2),
       status: "Success",
       time: dayjs().format("HH:mm:ss - DD MMM YYYY"),
       link: upiLink,
