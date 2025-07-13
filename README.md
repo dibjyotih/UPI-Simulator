@@ -4,7 +4,8 @@ A minimal UPI payment simulation app that generates UPI QR codes using your UPI 
 
 > ⚡ Built with React + Vite. No backend required.
 
-![Screenshot](./screenshot.png)
+<img width="1914" height="865" alt="Screenshot 2025-07-13 180805" src="https://github.com/user-attachments/assets/ea11d465-503b-45d4-8c6d-ee9869fb1e82" />
+
 
 ---
 
