@@ -35,7 +35,6 @@ function App() {
       alert("Amount should be less than ₹10,000");
       return;
     }
-
     const upiId = "dibjyotihota@ybl";
     const name = "Dibjyoti Hota";
     const txnRef = `TXN${Date.now()}`;
@@ -68,7 +67,7 @@ function App() {
     setTimer(0);
   };
 
-  const formatTime = (seconds) => {
+  const formatTime = (seconds) => {  
     const m = String(Math.floor(seconds / 60)).padStart(2, "0");
     const s = String(seconds % 60).padStart(2, "0");
     return `${m}:${s}`;
@@ -115,7 +114,7 @@ function App() {
             />
             <button
               onClick={handleGenerate}
-              disabled={!amount || amount > 10000}
+              disabled={!amount || amount<=0 || !amount || amount > 10000}
             >
               Generate UPI QR
             </button>
@@ -123,10 +122,9 @@ function App() {
               <p style={{ color: "red" }}>
                 Amount must be less or equal to ₹10,000
               </p>
-            )}
+            )}          
           </>
         )}
-
         {/* QR Section shown only if not expired */}
         {upiLink && !expired && (
           <div className="qr-section">
